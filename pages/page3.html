@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เผยแพร่ศาสนาพุทธ</title>
+  <link rel="icon" href="/assets/images/logo.png" type="image/png">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" rel="stylesheet" />
+  <style>
+    .bg-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      /* Dark overlay effect */
+    }
+
+    [x-cloak] {
+      display: none;
+    }
+
+
+    .hidden {
+      display: none;
+    }
+
+    .block {
+      display: block;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <div class="relative h-screen bg-cover bg-center" style="background-image: url('/assets/images/forest.jpg')">
+    <div class="absolute inset-0 bg-overlay"></div>
+    <div class="relative z-10">
+      <!-- Navbar -->
+      <header class="flex items-center justify-between p-5 text-white">
+        <div class="text-2xl font-bold">Dewi</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-orange-500">หน้าหลัก</a>
+          <a href="#about" class="hover:text-orange-500">เกี่ยวกับเรา</a>
+          <a href="#target" class="hover:text-orange-500">จุดมุ่งหมาย</a>
+          <a href="#principles" class="hover:text-orange-500">หลักธรรม</a>
+         
+          </nav>
+
+        <!-- Hamburger/X Button -->
+        <button id="menu-toggle" class="block md:hidden text-gray-800 focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="white" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Close (X) Icon -->
+          <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" class="w-6 h-6 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </header>
+
+      <!-- Full-Screen Menu -->
+      <div id="mobile-menu"
+        class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 z-40">
+        <div class="p-8">
+          <!-- Navigation Links -->
+          <ul class="space-y-6 text-lg">
+            <li><a href="#home" class="menu-link text-orange-500 font-bold">หน้าหลัก</a></li>
+            <li><a href="#about" class="menu-link text-gray-800 hover:text-orange-500">เกี่ยวกับเรา</a></li>
+            <li><a href="#target" class="menu-link text-gray-800 hover:text-orange-500">จุดมุ่งหมาย</a> </li>
+            <li><a href="#principles" class="menu-link text-gray-800 hover:text-orange-500">หลักธรรม</a></li>
+            
+            
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="h-full flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-5xl md:text-7xl font-bold text-white text-center" data-aos="fade-up">
+          เผยแพร่ศาสนาพุทธ
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-white max-w-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+          เรียนรู้คำสอนของพระพุทธเจ้า เพื่อความสงบและสันติสุขในชีวิต
+        </p>
+        <div class="mt-6 flex space-x-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="#get-started" class="px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600">Get Started</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-red-500 font-medium mb-2">ABOUT US</p>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">เกี่ยวกับเรา</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image Column -->
+        <div data-aos="fade-right" class="relative">
+          <img src="/assets/images/why-us-bg.jpg" alt="About Us" class="rounded-lg shadow-xl w-full">
+          <div class="absolute -bottom-6 -right-6 bg-red-500 w-32 h-32 rounded-full opacity-10"></div>
+        </div>
+
+        <!-- Content Column -->
+        <div data-aos="fade-left" class="space-y-6">
+          <h3 class="text-2xl font-bold text-gray-800">
+            เกี่ยวกับเรา
+          </h3>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Dewi ก่อตั้งขึ้นโดยกลุ่มนักเรียนชั้นมัธยมศึกษาปีที่6/10 จำนวน 7 คน
+            ด้วยความตั้งใจที่จะเผยแผ่พระธรรมคำสอนของพระพุทธเจ้าได้แก่ ขันธ์5 จิตเจตสิก
+            หลักธรรมต่างๆ ธรรมนิยาม นิวรณ์5 อุปทาน นิพพาน ให้เข้าถึงผู้คนได้ง่ายขึ้นในยุคดิจิทัล
+          </p>
+
+          <div class="space-y-4">
+            <!-- Feature 1 -->
+            <div class="flex items-start space-x-3">
+              <svg class="w-6 h-6 text-red-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <h4 class="font-semibold text-gray-800">กลุ่มเป้าหมาย</h4>
+                <p class="text-gray-600">ผู้ที่สนใจศึกษาพุทธศาสนา ชาวพุทธทั่วไป เยาวชน หรือชาวต่างชาติ</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- target Section -->
+  <section id="target" class="container mx-auto px-4 py-20">
+    <!-- Section Header -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <p class="text-red-500 font-medium mb-2">TARGETED</p>
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">จุดมุ่งหมาย</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Features Section -->
+      <div class="space-y-8">
+        <div data-aos="fade-up" class="flex items-start space-x-4">
+          <div class="bg-green-500 p-3 rounded-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">เป็นแหล่งรวบรวมและเผยแพร่ข้อมูลความรู้เกี่ยวกับพระพุทธศาสนา</h3>
+            <p class="text-gray-600">เว็บไซต์นี้เป็นคลังความรู้ที่เข้าถึงได้ง่าย รวบรวมเนื้อหาเกี่ยวกับ ขันธ์5 จิตเจตสิก
+              <br> หลักธรรมต่างๆ ธรรมนิยาม นิวรณ์5 อุปทาน นิพพาน</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" class="flex items-start space-x-4">
+          <div class="bg-green-500 p-3 rounded-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">เผยแผ่ธรรมะให้เข้าถึงคนรุ่นใหม่</h3>
+            <p class="text-gray-600">การใช้เทคโนโลยีและสื่อออนไลน์เป็นช่องทางในการเผยแผ่ธรรมะเป็นสิ่งสำคัญในยุคปัจจุบัน
+              โดยเฉพาะอย่างยิ่งในการเข้าถึงคนรุ่นใหม่ที่คุ้นเคยกับการใช้สื่อดิจิทัล </p>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="flex items-start space-x-4">
+          <div class="bg-green-500 p-3 rounded-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">สร้างสังคมแห่งการเรียนรู้พระพุทธศาสนา</h3>
+            <p class="text-gray-600">สร้างแหล่งข้อมูลสำหรับเรียนรู้เพื่อความสุขและเป็นที่ยึดเหนี่ยวจิตใจ</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div data-aos="fade-left" class="relative">
+        <img src="/assets/images/hero-carousel-2.jpg" alt="Workspace" class="rounded-lg shadow-xl w-full">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Happy Clients -->
+        <div data-aos="fade-up" class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center space-x-4">
+            <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <h3 class="text-4xl font-bold text-gray-800 mb-1">
+                <span class="counter" data-target="232">0</span>
+              </h3>
+              <p class="text-gray-600"> ผู้เข้าชม </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center space-x-4">
+            <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            <div>
+              <h3 class="text-4xl font-bold text-gray-800 mb-1">
+                <span class="counter" data-target="7">0</span>
+              </h3>
+              <p class="text-gray-600"> เนื้อหาคำสอน</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours of Support -->
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center space-x-4">
+            <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <div>
+              <h3 class="text-4xl font-bold text-gray-800 mb-1">
+                <span class="counter" data-target="48">0</span>
+              </h3>
+              <p class="text-gray-600">ชั่วโมงการรับชมเว็บไซต์</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member -->
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center space-x-4">
+            <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <div>
+              <h3 class="text-4xl font-bold text-gray-800 mb-1">
+                <span class="counter" data-target="7">0</span>
+              </h3>
+              <p class="text-gray-600">สมาชิก</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- principles -->
+    <section id="principles" class="py-20 px-4">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <p class="text-red-500 font-medium mb-2">PRINCIPLES</p>
+          <h2 class="text-4xl font-bold text-gray-800">หลักธรรม</h2>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Service Card 1 -->
+          <div data-aos="fade-up" class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow ">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ขันธ์5</h3>
+
+                <p class="text-gray-600">ขันธ์ 5 หมายถึง องค์ประกอบ 5 ประการที่ประกอบขึ้นเป็นชีวิตมนุษย์ ได้แก่ รูป
+                  (ร่างกาย), เวทนา (ความรู้สึก), สัญญา (การจำได้), <br> สังขาร (ความปรุงแต่งทางจิตใจ), และวิญญาณ
+                  (ความรู้สึกหรือการรับรู้)</p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-10 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/Khan5.html">
+                View More
+              </button>
+            </div>
+
+         
+          </div>
+          <!-- Service Card 2 -->
+          <div data-aos="fade-up" data-aos-delay="100"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">โลกธรรม 8</h3>
+                <p class="text-gray-600">โลกธรรม 8 คือสภาวะของโลก หรือความเป็นไปของชีวิตที่ทุกคนต้องพบเจออย่างหลีกเลี่ยงไม่ได้</p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/LokTham8.html">
+                View More
+              </button>
+            </div>
+
+           
+          </div>
+
+          <!-- Service Card 3 -->
+          <div data-aos="fade-up" data-aos-delay="200"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">จิต เจตสิก</h3>
+                <p class="text-gray-600">จิตเจตสิก หมายถึง มีอารมณ์และเจตนาเป็นตัวขับเคลื่อน
+                  ซึ่งจิตเจตสิกมีทั้งประเภทดีและไม่ดี ขึ้นอยู่กับเจตนาและการปรุงแต่งของจิต</p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/JitJedSik.html">
+                View More
+              </button>
+            </div>
+
+
+          </div>
+
+          <!-- Service Card 4 -->
+          <div data-aos="fade-up" data-aos-delay="300"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ธรรมนิยาม</h3>
+                <p class="text-gray-600">ธรรมนิยาม หมายถึง กฎเกณฑ์ที่ควบคุมความเป็นไปของสรรพสิ่งในจักรวาล
+                  ไม่ว่าพระพุทธเจ้าจะอุบัติขึ้นหรือไม่ก็ตาม กฎเหล่านี้ก็ยังคงดำเนินไปเช่นนั้นเอง
+                </p>
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/ThamNiYam.html">
+                View More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div data-aos="fade-up" data-aos-delay="400"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">นิวรณ์5</h3>
+                <p class="text-gray-600">นิวรณ์5 หมายถึง สิ่งที่กั้นขวางจิตใจไม่ให้เข้าถึงความสงบ สมาธิ ปัญญา
+                  และความดีงามต่างๆ เปรียบเสมือนอุปสรรคที่บดบังปัญญา ทำให้ไม่สามารถเห็นความจริงของสิ่งต่างๆ
+                  ได้อย่างชัดเจน
+
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/Niwarn5.html">
+                View More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div data-aos="fade-up" data-aos-delay="500"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">อุปทาน</h3>
+                <p class="text-gray-600">อุปทาน หมายถึง การยึดมั่นถือมั่นในสิ่งต่างๆ ทั้งในรูปแบบทางกายและจิตใจ
+                  ซึ่งเป็นสาเหตุสำคัญที่ทำให้เกิดทุกข์</p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button 
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/UpThan.html">
+                View More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 7 -->
+          <div data-aos="fade-up" data-aos-delay="500"
+            class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start space-x-4">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">นิพพาน</h3>
+                <p class="text-gray-600">นิพพาน หมายถึง สภาวะที่ไม่เกิดและไม่ตาย มีความสงบและการรู้แจ้งเห็นจริงในธรรมะ
+
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="view-more-btn mt-16 text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+                data-path="/pages/NiPhaPan.html">
+                View More
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const closeIcon = document.getElementById("close-icon");
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      // Counter animation
+      const counters = document.querySelectorAll('.counter');
+
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 2000; // Animation duration in milliseconds
+        const step = (target / duration) * 10; // Update every 10ms
+
+        let current = 0;
+        const updateCounter = () => {
+          current += step;
+          if (current < target) {
+            counter.textContent = Math.ceil(current);
+            setTimeout(updateCounter, 10);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        // Start counter animation when element comes into view
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              updateCounter();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        observer.observe(counter);
+      });
+
+
+      // Toggle Menu and Icons
+      menuToggle.addEventListener("click", () => {
+        const isMenuOpen = !mobileMenu.classList.contains("translate-x-full");
+        mobileMenu.classList.toggle("translate-x-full");
+        closeIcon.classList.toggle("hidden", isMenuOpen);
+        hamburgerIcon.classList.toggle("hidden", !isMenuOpen);
+      });
+
+      // Close Menu when clicking on a link
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          // ปิดเมนู
+          mobileMenu.classList.add("translate-x-full");
+          hamburgerIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+
+      // Get all the "View More" buttons by their class name
+        const buttons = document.querySelectorAll('.view-more-btn');
+
+        // Add event listeners to all buttons
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get the path from the data-path attribute of the clicked button
+                const targetUrl = button.getAttribute('data-path');
+                
+                // Navigate to the specified URL
+                window.location.href = targetUrl;
+            });
+        });
+
+    </script>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+    </script>
+</body>
+
+</html>
